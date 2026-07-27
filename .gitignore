@@ -30,8 +30,13 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files — `.env.example` is committed, real values never are
+.env
 .env*.local
+
+# EAS
+.easignore
+credentials.json
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +44,17 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# local tooling notes and assistant config — not part of the deliverable
+.claude/
+.claudeignore
+AGENTS.md
+CLAUDE.md
+
+# the assignment brief itself
+task.pdf

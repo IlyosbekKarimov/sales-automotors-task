@@ -1,0 +1,65 @@
+{
+  "tasks": [
+    {
+      "id": "task_seed_hydraulic_hose",
+      "title": "Replace hydraulic hose on unit 12",
+      "description": "Boom cylinder feed line is weeping at the crimp. Bring a 3/4in hose assembly and two 90-degree fittings. Machine must be locked out before starting.",
+      "dueDate": "2026-07-28T09:00:00.000Z",
+      "location": {
+        "address": "Amir Temur Ave 107B, Tashkent",
+        "latitude": 41.311081,
+        "longitude": 69.240562
+      },
+      "attachments": [],
+      "status": "In Progress",
+      "createdAt": "2026-07-26T07:15:00.000Z",
+      "updatedAt": "2026-07-27T06:40:00.000Z"
+    },
+    {
+      "id": "task_seed_generator_service",
+      "title": "500-hour generator service",
+      "description": "Scheduled service on the standby generator: oil and filter change, coolant top-up, load-bank test for 30 minutes, and record readings in the site log.",
+      "dueDate": "2026-07-30T13:30:00.000Z",
+      "location": {
+        "address": "Yunusabad District, Tashkent",
+        "latitude": 41.363,
+        "longitude": 69.289
+      },
+      "attachments": [],
+      "status": "New",
+      "createdAt": "2026-07-25T11:02:00.000Z",
+      "updatedAt": "2026-07-25T11:02:00.000Z"
+    },
+    {
+      "id": "task_seed_lift_inspection",
+      "title": "Annual lift inspection — Registan site",
+      "description": "Statutory inspection of the scissor lift: check guardrails, emergency lowering, hydraulic leaks and the last certificate date. Photograph the data plate for the report.",
+      "dueDate": "2026-08-04T08:00:00.000Z",
+      "location": {
+        "address": "Registan St 12, Samarkand",
+        "latitude": 39.654,
+        "longitude": 66.975
+      },
+      "attachments": [],
+      "status": "New",
+      "createdAt": "2026-07-24T15:48:00.000Z",
+      "updatedAt": "2026-07-24T15:48:00.000Z"
+    },
+    {
+      "id": "task_seed_warehouse_audit",
+      "title": "Spare parts stock count",
+      "description": "Quarterly count of consumables in the Namangan warehouse. Reconcile against the parts list and flag anything below the reorder level.",
+      "dueDate": "2026-07-22T10:00:00.000Z",
+      "location": {
+        "address": "Uychi St 30, Namangan",
+        "latitude": 40.998,
+        "longitude": 71.672
+      },
+      "attachments": [],
+      "status": "Completed",
+      "createdAt": "2026-07-20T09:30:00.000Z",
+      "updatedAt": "2026-07-22T12:10:00.000Z"
+    }
+  ],
+  "history": []
+}

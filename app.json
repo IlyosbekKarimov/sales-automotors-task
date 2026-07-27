@@ -1,25 +1,66 @@
 {
   "expo": {
-    "name": "sales-automotors-task",
+    "name": "Field Task Manager",
     "slug": "sales-automotors-task",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "scheme": "fieldtasks",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ilyosbek.fieldtasks",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Field Task Manager needs access to your photos so you can attach site images to a task.",
+        "NSCameraUsageDescription": "Field Task Manager needs access to your camera so you can photograph a job site and attach it to a task."
+      }
     },
     "android": {
+      "package": "com.ilyosbek.fieldtasks",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0B1220",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "usesCleartextTraffic": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["android.permission.POST_NOTIFICATIONS", "android.permission.VIBRATE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "color": "#2563EB",
+          "defaultChannel": "task-reminders"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Field Task Manager needs access to your photos so you can attach site images to a task.",
+          "cameraPermission": "Field Task Manager needs access to your camera so you can photograph a job site and attach it to a task."
+        }
+      ]
+    ],
+    "extra": {
+      "candidateCode": "SA-RN-2026-ILYOS",
+      "eas": {
+        "projectId": "473f8ca0-a764-42d6-8c0b-5b5884b7de1d"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/473f8ca0-a764-42d6-8c0b-5b5884b7de1d"
     }
   }
 }

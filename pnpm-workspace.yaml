@@ -1,0 +1,11 @@
+# pnpm 11 reads settings from here rather than from a "pnpm" field in package.json.
+# `unrs-resolver` is the native binary behind the ESLint import resolver; pnpm
+# blocks postinstall scripts unless the package is explicitly allow-listed.
+allowBuilds:
+  unrs-resolver: true
+
+# node_modules stays strictly isolated (pnpm's default). Every package the app
+# imports — or names in babel.config.js — must be declared in package.json, or
+# it will not resolve. A previously committed `.npmrc` claimed to hoist
+# everything but pnpm 11 no longer reads that setting, so the strictness was
+# real and silent; `babel-preset-expo` is declared explicitly for this reason.
