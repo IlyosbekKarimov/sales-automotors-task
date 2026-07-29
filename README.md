@@ -125,7 +125,7 @@ than the hotspot subnet — use A or B in that case.
 
 ## 4. The APK
 
-**Download:** _paste the EAS build URL or Google Drive link here before submitting_
+**Download:** (https://expo.dev/accounts/zeyronbek/projects/sales-automotors-task/builds/ce5f85b8-01b6-4f8f-8add-18def5ba9ce9)
 
 The project is configured for **EAS Build**, with a `preview` profile that produces a directly
 installable APK (not an AAB):
